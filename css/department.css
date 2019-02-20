@@ -1,0 +1,350 @@
+/* start head*/
+.head 
+{
+    padding: 40px 0;
+    background: #DE6262;
+}
+.head h2
+{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 30px
+    
+}
+.head p
+{
+    color: #EEE
+}
+/*start departments*/
+#departments
+{
+    padding-top: 40px
+}
+#departments ul
+{
+    list-style: none;
+    display: flex;
+    padding-left: 0
+}
+
+#departments ul li
+{
+    padding: 10px 20px;
+    background: #F2F2F2;
+    border: 2px solid #d8d4d4;
+    cursor: pointer
+}
+#departments ul li i
+{
+    color: #DA6363;
+    margin-right: 5px;
+    font-size: 20px
+}
+/*health-care*/
+#health-care
+{
+    padding-top: 40px;
+    
+}
+#health-care .left
+{
+    padding: 0px 15px 0 0
+}
+#health-care .middle
+{
+    padding: 0px  0 0 15px
+}
+#health-care .left div,#health-care .middle div
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEE;
+    padding: 10px 0 5px 0
+    
+}
+#health-care .left p,#health-care .middle p
+{
+    margin-bottom: 0;
+    color: #555
+}
+#health-care h5
+{
+        font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+#health-care h6
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: #555
+}
+#health-care .right img
+{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px
+}
+/*Outpatient-Surgery*/
+#Outpatient-Surgery 
+{
+    display: none
+}
+#Outpatient-Surgery .item
+{
+    display: flex;
+    margin-bottom: 40px
+    
+}
+@media (max-width:540px){
+    #Outpatient-Surgery .item
+    {
+        display: block
+    }
+    #Outpatient-Surgery .item .content
+    {
+        text-align: center
+    }
+    #Outpatient-Surgery .item .content h4
+    {
+        margin-top: 30px
+    }
+    #Outpatient-Surgery .social
+    {
+        width: 50%;
+        margin: auto
+    }
+    
+}
+#Outpatient-Surgery .lead
+{
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #444
+}
+/*#Outpatient-Surgery .item .img
+{
+    width: 100%
+}*/
+
+#Outpatient-Surgery .item .img img
+{
+    width: 100%
+}
+#Outpatient-Surgery .item .content
+{
+    padding: 0 20px 20px 30px
+}
+#Outpatient-Surgery .item .content h4
+{
+    font-weight: bold;
+    font-size: 20px
+}
+#Outpatient-Surgery .item .content h6
+{
+    color: red;
+    font-weight: 600
+}
+#Outpatient-Surgery .item .content p
+{
+    color: #777;
+    font-size: 15px
+}
+#Outpatient-Surgery .social { 
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap
+}
+#Outpatient-Surgery .social i
+{
+    
+    color: #777;
+    padding: 15px;
+    
+    font-size: 25px
+}
+/*start gallery*/
+#dentist
+{
+    display: none
+}
+.gallery
+{
+    width: 800px;
+    margin: auto;
+    padding: 3px;
+    background: #FFF;
+    position:relative;
+}
+.gallery .master-img
+{
+     position:relative;
+}
+
+.gallery .master-img img
+{
+    width: 100%;
+    cursor: pointer 
+}
+.gallery .master-img i
+{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    background: #f00;
+    z-index: 2;
+    font-size: 20px;
+    cursor: pointer
+}
+.gallery .master-img .fa-chevron-left
+{
+   left: 0 
+}
+.gallery .master-img .fa-chevron-right
+{
+    right: 0
+}
+.gallery .thumbnails img
+{
+/*    width: 20%;     هعمله dynamic by jquery    */
+    border: 3px solid #CCC;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    opacity: .5
+    
+}
+
+.gallery .thumbnails img.selected
+{
+    border: 3px solid #8e8ec5;
+    opacity: 1
+}
+/*End gallery*/
+
+/**/
+#Ophthalmology-Clinic
+{
+    display: none
+}
+#Ophthalmology-Clinic .left
+{
+    padding: 0px 15px 0 0
+}
+#Ophthalmology-Clinic .middle
+{
+    padding: 0px  0 0 15px
+}
+#Ophthalmology-Clinic .left div,#Ophthalmology-Clinic .middle div
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEE;
+    padding: 10px 0 5px 0
+    
+}
+#Ophthalmology-Clinic .left p,#Ophthalmology-Clinic .middle p
+{
+    margin-bottom: 0;
+    color: #555
+}
+#Ophthalmology-Clinic h5
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+#Ophthalmology-Clinic h6
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: #555
+}
+#Ophthalmology-Clinic .p
+{
+    padding: 30px 0 0 0 ;
+    line-height: 1.8
+}
+/* loading*/
+.loadingPage
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 999999;
+    background: #DA6363;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.loading
+{
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+    
+    
+    
+    
+}
+.loading span
+{
+    width:9px;
+    height:5px;
+    background-color: #9b59b6;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    display: block;
+    animation: waving 1.5s infinite ease-in-out ;
+    
+}
+.loading span:nth-of-type(2)
+{
+    left:11px;
+    animation-delay: .2s
+}
+.loading span:nth-of-type(3)
+{
+    left: 22px;
+    animation-delay: .4s
+
+}
+.loading span:nth-of-type(4)
+{
+    left: 33px;
+    animation-delay: .6s
+
+}
+.loading span:last-of-type
+{
+    left:44px;
+    animation-delay: .8s
+
+}
+@keyframes waving
+{
+    0%,50%,100%{
+        height: 5px;
+        transform: translateY(0);
+        background: #9b59b6
+        
+    }
+    25%
+    {
+        height: 30px;
+        transform: translateY(20px);
+        background: #3498d6
+    }
+}

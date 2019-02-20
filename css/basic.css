@@ -1,0 +1,320 @@
+*
+{
+    transition: all 1s ease
+}
+body
+{
+    font-family: 'Lato', sans-serif;
+
+}
+.clr
+{
+    clear: both
+}
+/*Start header*/
+.header{
+    border-bottom: 1px solid #EEE;
+    overflow: hidden
+   
+}
+.header i
+{
+    color: #EEE;
+    padding: 5px
+}
+.header .left
+{
+    display: flex;
+    float: left
+    
+}
+.header .left >div
+{
+    padding: 13px 20px;
+    border-right: 1px solid #EEE
+}
+.header .left span
+{
+    color: #555
+}
+.header .left i
+{
+    color: #777
+}
+.header .right
+{
+    display: flex;
+    float: right
+    
+    
+}
+.header .right div
+{
+      padding: 13px 20px;
+    display: flex
+   
+}
+.header .right i
+{
+    color: #CCC;
+    margin: 0px 5px;
+    font-size: 17px
+}
+@media (max-width:1000px){
+    .header .left span
+    {
+        font-size: 15px
+    }
+}
+@media (max-width:773px){
+    .header .left 
+    {
+        display: none
+    }
+    .header .right
+    {
+        width: 40%;
+        display: block;
+        margin: auto;
+        float: none;
+        text-align: center
+    }
+}
+
+/*End header*/
+/* start navbar*/
+
+
+.navigation-bar
+{
+    width: 100%;
+    background: #FFF
+    /*border-bottom: 1px solid #EEE;*/
+    
+    
+}
+.navigation-bar .bar
+{
+    overflow: hidden;
+    
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+.navigation-bar .bar .brand
+{
+    
+}
+.navigation-bar .bar .link
+{
+    overflow: hidden;
+    list-style-type: none;
+    padding-top: 5px;
+    margin-bottom: 0
+    
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5
+}
+
+.navigation-bar .bar .link li
+{ 
+    float: left;
+    overflow: hidden;
+    /*padding:15px 0px ;*/
+     
+    
+}
+.navigation-bar .bar .link li a
+{ 
+    font-size: 17px;
+    padding:10px 15px;
+    display: block;
+    color: #555;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+}
+.navigation-bar .active 
+{
+    background: #DE6262;
+    color: #FFF !important;
+    border-radius: 3px
+}
+.navigation-bar a.active:hover {
+     background: #DE6262;
+    color: #FFF !important;
+    border-radius: 3px
+}
+.navigation-bar .bar .link li a:hover
+{
+    text-decoration: none;
+    background: #CCC
+}
+.brand
+{
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+    
+}
+.brand img
+{
+    width: 55px;
+    height: 55px
+}
+.i
+{
+    display: none;
+    
+}
+
+@media (max-width:1000px){
+    
+    .navigation-bar .bar .link li a
+        { 
+            font-size: 13px;
+        }
+    .brand
+        {
+            font-size: 25px;
+        }
+    .brand img
+        {
+            width: 45px;
+            height: 45px
+        }
+
+    
+}
+@media (max-width:780px){
+    .navigation-bar .bar .link
+        {
+            display: none
+
+        }
+    .i
+    {
+        display: block;
+        float: right;
+        font-size: 30px;
+        color: #DE6262;
+        margin-right: 30px
+    }
+    .brand
+        {
+            margin-left: 30px
+        }
+}
+
+
+/*end nav*/
+/*start footer*/
+#footer
+{
+    background: #F5F5F5;
+    padding-top: 60px;
+    
+}
+
+#footer .left .subscripe input
+{
+    width: 70%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #DE6262;
+}
+#footer .left .subscripe
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 30px
+}
+#footer .left .subscripe button
+{
+    width: 25%;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+#footer .left .links
+{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+#footer .left .links .item ul
+{
+    list-style:none
+}
+#footer .left .links .item ul li
+{
+    margin-bottom: 10px
+}
+#footer .left .links .item ul li a
+{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: capitalize
+}
+#footer .right
+{
+    padding-left: 50px;
+}
+#footer .right .contact
+{
+    
+    padding-top: 30px;
+    
+}
+#footer .right .contact h5
+{
+    color: #444;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold
+
+}
+#footer .right .contact p
+{
+    color: #666;
+    padding: 10px 0;
+    font-size: 20px
+}
+#footer .right .social-media
+{
+    display: flex;
+    
+    
+}
+#footer .right .social-media i
+{
+    color: #DE6262;
+    margin-right: 20px
+}
+#footer .end
+{
+    width: 100%;
+    display: block;
+    background: #000;
+    color: #DE6262;
+    font-size: 20px;
+    padding: 30px 0
+}
+#footer .end span
+{
+    color: #09c
+}
+
+/*End footer*/

@@ -1,0 +1,316 @@
+#app-head
+{
+    background: url(../images/app-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 250px;
+    
+}
+
+#app-head .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.1);
+    padding: 75px 0
+}
+#app-head .overlay h2
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 50px
+}
+#app-head .overlay p
+{
+    font-size: 20px;
+    color: #555
+}
+/*Start appointment*/
+#appointment
+{
+    overflow: hidden;
+    background-image: url(../images/app.jpg);
+    background-size: 100% 100%
+}
+#book .top
+{
+    margin-top: 70px;
+    margin-bottom: 50px
+}
+#book .top h3
+{
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase
+}
+#book .top p
+{
+    padding: 20px 170px;
+    color: #777
+}
+#appointment .left
+{
+    background-image: url(../images/app-doc.png);
+    background-size: 100% 100%
+}
+#appointment .left img
+{
+    width: 100%;
+    min-height: 100%
+}
+#appointment .right 
+{
+    /*background: #DE6262;*/
+    padding-top: 30px
+}
+#appointment .right h3
+{
+        color: #FFF;
+    text-transform: capitalize;
+    padding-left: 40px;
+    padding-bottom: 13px;
+    font-weight: 600;
+}
+#appointment .right form 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+    
+}
+#appointment .right form
+{
+    width: 100%
+}
+#appointment .right form div
+{
+    width: 50%;
+    margin-bottom: 20px
+}
+#appointment .right form .sm
+{
+    width: 30%
+}
+#appointment .right label
+{
+    display: block
+}
+#appointment .right input[type="text"],.right input[type="email"]
+{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid #999
+    
+}
+.textA
+{
+    margin-top:
+}
+textarea
+{
+    width: 100%;
+    height: 120px;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid #999
+    
+}
+#appointment .right button
+{
+    margin: 30px 0;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 34px;
+    font-weight: bold;
+    color: #555;
+    background: #FFF;
+    font-size: 18px;
+    text-transform: capitalize
+    
+}
+.hambozo
+{
+    padding-left: 0;
+    padding-right: 0
+}
+/*End appointment*/
+/*questions*/
+
+#questions
+{
+    padding: 70px 0;
+}
+#questions  .item
+{
+    padding: 20px 0;
+    border-bottom: 1px solid #EEE
+}
+#questions h2
+{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+#questions h3
+{
+    font-weight: bold;
+    font-size: 18px
+}
+
+#questions span
+{
+    font-weight: bold;
+    color: #f00;
+    text-transform: uppercase;
+    margin-right: 5px
+}
+#questions p
+{
+    font-size: 15px;
+    color: #777;
+    padding: 30px 0
+}
+#questions h2 + p
+{
+    color: #777;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    width: 70%;
+    margin: auto
+}
+
+/**/
+
+.hamoo
+{
+    padding: 50px 0;
+    background: #DA6363;
+    
+}
+.hamoo .container
+{
+    text-align: center
+}
+.hamoo h2
+{
+    font-size: 26px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 0;;
+    word-spacing: 5px
+}
+.hamoo p
+{
+    color: #FFF;
+    color: 14px
+}
+.hamoo button
+{
+       color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 13px 31px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    height: 52px;
+    margin-top: 32px;
+    cursor: pointer
+}
+/* loading*/
+.loadingPage
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 999999;
+    background: #DA6363;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.loading
+{
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+    
+    
+    
+    
+}
+.loading span
+{
+    width:9px;
+    height:5px;
+    background-color: #9b59b6;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    display: block;
+    animation: waving 1.5s infinite ease-in-out ;
+    
+}
+.loading span:nth-of-type(2)
+{
+    left:11px;
+    animation-delay: .2s
+}
+.loading span:nth-of-type(3)
+{
+    left: 22px;
+    animation-delay: .4s
+
+}
+.loading span:nth-of-type(4)
+{
+    left: 33px;
+    animation-delay: .6s
+
+}
+.loading span:last-of-type
+{
+    left:44px;
+    animation-delay: .8s
+
+}
+@keyframes waving
+{
+    0%,50%,100%{
+        height: 5px;
+        transform: translateY(0);
+        background: #9b59b6
+        
+    }
+    25%
+    {
+        height: 30px;
+        transform: translateY(15px);
+        background: #3498d6
+    }
+}
+
+@media (max-width:600px)
+{
+    .hamoo  div
+    {
+        display: block;
+        width: 100%
+    }
+}
